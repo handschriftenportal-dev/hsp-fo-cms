@@ -1,0 +1,84 @@
+/* --------------------------------------------------------- */
+/* Fixed height and width ratio                              */
+/* --------------------------------------------------------- */
+
+svg, img, embed, object {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+/* --------------------------------------------------------- */
+/* Colors                                                    */
+/* --------------------------------------------------------- */
+
+a {
+    --white-smoke: #f6f4f2;
+    --turquoise: #1dcfbe;
+    --dark-turquoise: #0f685f;
+    --dark-terra-cotta: #d65151;
+    --extra-dark-terra-cotta: #6b2929;
+}
+
+a.internal:link { color: var(--dark-terra-cotta); }
+a.internal:visited { color: var(--extra-dark-terra-cotta); }
+
+a.external:link { color: var(--turquoise); }
+a.external:visited { color: var(--dark-turquoise); }
+
+a:hover { background-color: var(--white-smoke); }
+
+li {
+    --dark-terra-cotta: #d65151;
+}
+li::marker {
+    color: #d65151;
+}
+
+/* --------------------------------------------------------- */
+/* Text sizes / Media queries                                */
+/* --------------------------------------------------------- */
+
+body {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media ( min-width: 1024px ) {
+    h1 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media ( min-width: 1280px ) {
+    body {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+        line-height: 25px;
+    }
+}
