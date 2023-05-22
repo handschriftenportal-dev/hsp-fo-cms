@@ -1,0 +1,17 @@
+declaration/
+dist/
+doc/
+node_modules/
+.npmrc
+ci-pipeline.properties
+index.html
+README.md
+Jenkinsfile
+jest.config.js
+package-lock.json
+package.json
+tsconfig.declaration.json
+tsconfig.json
+sonar-project-properties
+webpack.config.js
+

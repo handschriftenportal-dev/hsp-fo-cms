@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSP CMS Demo</title>
+</head>
+<body>
+  <div id="main"></div>
+  <script src="/hsp-fo-cms.js"></script>
+  <script>
+
+    const config = {
+      enableRouting: true,
+      wordpressEndpoint: '/api/wordpress',
+      wordpressCssFile: '/api/wordpress/css',
+      wordpressResolveEndpoint: '/api/url'
+    }
+
+    cms = createHspCms(config)
+
+    cms.mount({
+      main: document.getElementById('main')
+    })
+
+  </script>
+</body>
+</html>
